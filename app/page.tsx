@@ -44,7 +44,7 @@ export default function MetodoLLLanding() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl lg:max-w-3xl mx-auto text-center">
               <Image
-                src="/images/metodo-viv-logo.png"
+                src="/images/metodovivilogo.png"
                 alt="Método VIV"
                 width={280}
                 height={84}
@@ -53,30 +53,34 @@ export default function MetodoLLLanding() {
               />
 
               <div className="space-y-6 mb-8">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="bg-gradient-to-r from-yellow-500 to-amber-500 bg-clip-text text-transparent drop-shadow-sm">
-                    Destrave sua comunicação
+                    Destrave sua comunicação em vídeos
                   </span>
-                  <span className="text-white drop-shadow-sm"> em vídeos e comece a </span>
+                  <br />
+                  <span className="text-white drop-shadow-sm">e comece a </span>
                   <span className="bg-gradient-to-r from-yellow-500 to-amber-500 bg-clip-text text-transparent drop-shadow-sm">
                     vender todos os dias
+                  </span>
+                  <br />
+                  <span className="text-white drop-shadow-sm">com estratégia — </span>
+                  <span className="bg-gradient-to-r from-yellow-500 to-amber-500 bg-clip-text text-transparent drop-shadow-sm">
+                    mesmo que você nunca tenha gravado antes.
                   </span>
                 </h1>
 
                 <p className="text-lg sm:text-xl md:text-2xl text-white leading-relaxed drop-shadow-sm">
                   Com estratégia comprovada —{" "}
                   <span className="text-yellow-400 font-bold">mesmo que você nunca tenha gravado antes</span> e queira{" "}
-                  <span className="text-yellow-400 font-bold">ganhar mais dinheiro</span> trabalhando de casa
+                  <span className="text-yellow-400 font-bold">ganhar mais dinheiro</span> com o que você faz hoje
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 mb-8">
                 <CTAButton href="https://pay.hotmart.com/L100974143J">
                   QUERO DESTRAVAR E VENDER MAIS
                 </CTAButton>
-                <p className="text-sm text-white/90 drop-shadow-sm">
-                  🔒 Acesso imediato • Garantia de 7 dias • Mais de 500 alunas transformadas
-                </p>
+
               </div>
             </div>
           </div>
@@ -626,7 +630,7 @@ export default function MetodoLLLanding() {
                     Apenas <span className="text-red-600 text-2xl">50 vagas</span> disponíveis com este preço especial
                   </p>
                   <p className="text-gray-600">
-                    Após esgotar, o valor volta para <span className="font-bold">R$ 497,00</span>
+                    Após esgotar, o valor volta para <span className="font-bold">R$ 1297,00</span>
                   </p>
                 </div>
 
