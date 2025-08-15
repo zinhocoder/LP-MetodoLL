@@ -89,6 +89,41 @@ export default function MetodoLLLanding() {
 
       </section>
 
+      {/* Seção VSL */}
+      <section className="py-16 sm:py-20 lg:py-24 px-4 bg-gradient-to-r from-yellow-50/80 to-amber-50/80">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-yellow-500 to-amber-500 bg-clip-text text-transparent">
+            Assista ao vídeo e descubra como transformar sua comunicação
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
+            Neste vídeo exclusivo, a Larissa revela a estratégia que já transformou mais de 500 pessoas
+          </p>
+          
+          {/* Video Container */}
+          <div className="relative w-full max-w-4xl mx-auto">
+            <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/xGd2JFC6-1E"
+                title="Método VIV - Transforme sua Comunicação"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          {/* CTA após o vídeo */}
+          <div className="mt-12">
+            <a href="https://pay.hotmart.com/L100974143J" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-gray-900 font-bold text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl border-2 border-yellow-300">
+                QUERO APLICAR A ESTRATÉGIA AGORA
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Seção de Prova Social */}
       <section className="py-12 px-4 bg-gradient-to-r from-yellow-50/80 to-amber-50/80 border-y border-yellow-200/50">
         <div className="container mx-auto max-w-6xl text-center">
@@ -942,13 +977,12 @@ export default function MetodoLLLanding() {
           </div>
 
           {/* Informações Legais */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
               <h4 className="font-bold text-gray-800 mb-4">Empresa</h4>
               <div className="space-y-2 text-gray-600">
                 <p>Larissa Lima Comunicação LTDA</p>
                 <p>CNPJ: 17.040.680/0001-70</p>
-                <p>contato@metodoviv.com.br</p>
               </div>
             </div>
 
@@ -956,8 +990,22 @@ export default function MetodoLLLanding() {
               <h4 className="font-bold text-gray-800 mb-4">Suporte</h4>
               <div className="space-y-2 text-gray-600">
                 <p>Segunda a Sexta: 9h às 18h</p>
-                <p>Contato: +55 19 99769-4110</p>
+                <p>WhatsApp: +55 19 99769-4110</p>
                 <p>Tempo de resposta: até 24h</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <h4 className="font-bold text-gray-800 mb-4">Redes Sociais</h4>
+              <div className="space-y-2 text-gray-600">
+                <a 
+                  href="https://www.instagram.com/larissalima.comunicacao" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-yellow-600 hover:text-yellow-700 transition-colors font-medium"
+                >
+                  @larissalima.comunicacao
+                </a>
               </div>
             </div>
 
