@@ -114,9 +114,9 @@ export default function MetodoLLLanding() {
           </div>
 
           {/* CTA após o vídeo */}
-          <div className="mt-12">
+          <div className="mt-12 px-4">
             <a href="https://pay.hotmart.com/L100974143J" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-gray-900 font-bold text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-6 rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl border-2 border-yellow-300">
+              <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-gray-900 font-bold text-base sm:text-lg lg:text-xl px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl border-2 border-yellow-300 w-full sm:w-auto">
                 QUERO APLICAR A ESTRATÉGIA AGORA
               </Button>
             </a>
