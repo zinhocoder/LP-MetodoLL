@@ -16,6 +16,7 @@ import {
   Module 
 } from "@/components/landing-sections"
 import { TermsPopup } from "@/components/terms-popup"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import { useState } from "react"
 
 export default function MetodoLLLanding() {
@@ -44,7 +45,7 @@ export default function MetodoLLLanding() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl lg:max-w-3xl mx-auto text-center">
               <Image
-                src="/images/metodovivilogo.png"
+                src="/images/metodovivlogo.png"
                 alt="Método VIV"
                 width={280}
                 height={84}
@@ -70,9 +71,8 @@ export default function MetodoLLLanding() {
                 </h1>
 
                 <p className="text-lg sm:text-xl md:text-2xl text-white leading-relaxed drop-shadow-sm">
-                  Com estratégia comprovada —{" "}
-                  <span className="text-yellow-400 font-bold">mesmo que você nunca tenha gravado antes</span> e queira{" "}
-                  <span className="text-yellow-400 font-bold">ganhar mais dinheiro</span> com o que você faz hoje
+                  Descubra como criar conteúdos que <span className="text-yellow-400 font-bold">realmente vendem</span> e transforme sua comunicação em{" "}
+                  <span className="text-yellow-400 font-bold">resultados reais</span> para seu negócio
                 </p>
               </div>
 
@@ -977,7 +977,7 @@ export default function MetodoLLLanding() {
           </div>
 
           {/* Informações Legais */}
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
               <h4 className="font-bold text-gray-800 mb-4">Empresa</h4>
               <div className="space-y-2 text-gray-600">
@@ -999,12 +999,12 @@ export default function MetodoLLLanding() {
               <h4 className="font-bold text-gray-800 mb-4">Redes Sociais</h4>
               <div className="space-y-2 text-gray-600">
                 <a 
-                  href="https://www.instagram.com/larissalima.comunicacao" 
+                  href="https://www.instagram.com/larilimatransforma" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-yellow-600 hover:text-yellow-700 transition-colors font-medium"
                 >
-                  @larissalima.comunicacao
+                  @larilimatransforma
                 </a>
               </div>
             </div>
@@ -1021,35 +1021,35 @@ export default function MetodoLLLanding() {
 
           {/* Links Legais */}
           <div className="border-t border-gray-200 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="flex flex-wrap justify-center md:justify-start space-x-6 text-sm text-gray-600">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 text-sm text-gray-600">
                 <button 
                   onClick={() => setPrivacyOpen(true)} 
-                  className="hover:text-yellow-600 transition-colors cursor-pointer"
+                  className="hover:text-yellow-600 transition-colors cursor-pointer px-2 py-1"
                 >
                   Política de Privacidade
                 </button>
                 <button 
                   onClick={() => setTermsOpen(true)} 
-                  className="hover:text-yellow-600 transition-colors cursor-pointer"
+                  className="hover:text-yellow-600 transition-colors cursor-pointer px-2 py-1"
                 >
                   Termos de Uso
                 </button>
                 <button 
                   onClick={() => setRefundOpen(true)} 
-                  className="hover:text-yellow-600 transition-colors cursor-pointer"
+                  className="hover:text-yellow-600 transition-colors cursor-pointer px-2 py-1"
                 >
                   Política de Reembolso
                 </button>
                 <button 
                   onClick={() => setContactOpen(true)} 
-                  className="hover:text-yellow-600 transition-colors cursor-pointer"
+                  className="hover:text-yellow-600 transition-colors cursor-pointer px-2 py-1"
                 >
                   Contato
                 </button>
               </div>
 
-              <div className="text-sm text-gray-500">
+              <div className="text-sm text-gray-500 text-center md:text-left">
                 © 2024 Método VIV. Todos os direitos reservados. | 
                 <span className="text-gray-400"> Desenvolvido por </span>
                 <a 
@@ -1087,6 +1087,9 @@ export default function MetodoLLLanding() {
         onClose={() => setContactOpen(false)} 
         type="contact" 
       />
+
+      {/* Botão flutuante do WhatsApp */}
+      <WhatsAppButton />
     </div>
   )
 }
